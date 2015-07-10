@@ -71,6 +71,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FinalScore.cs" />
     <Compile Include="Assets\scripts\BounceSound.cs" />
     <Compile Include="Assets\scripts\MuteButtonGraphic.cs" />
     <Compile Include="Assets\scripts\ParallaxBackground.cs" />
