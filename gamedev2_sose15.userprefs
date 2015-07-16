@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\FinalScore.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\TestingArea\Assets\enemy1.cs">
     <Files>
-      <File FileName="Assets\scripts\gamecontroller.cs" Line="18" Column="17" />
-      <File FileName="Assets\FinalScore.cs" Line="14" Column="32" />
+      <File FileName="..\TestingArea\Assets\LaserTut\laserScript.cs" Line="14" Column="26" />
+      <File FileName="..\TestingArea\Assets\enemy1.cs" Line="12" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

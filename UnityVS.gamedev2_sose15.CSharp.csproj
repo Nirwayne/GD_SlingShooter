@@ -71,6 +71,21 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\Abilities.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\BonusGamecontroller.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\blueItem_get.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\destroy_plane.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\destroy_trees.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\enemy1.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\playerDetails.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\redItem_get.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\rotation_script.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\shootScript.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\spawnProjectiles.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\staticMovement.cs" />
+    <Compile Include="Assets\BonusLevelPckg\BonusScripts\yellowItem.cs" />
+    <Compile Include="Assets\BonusLevelPckg\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\BonusLevelPckg\FirstPersonCharacter\Scripts\MouseLook.cs" />
     <Compile Include="Assets\FinalScore.cs" />
     <Compile Include="Assets\scripts\BounceSound.cs" />
     <Compile Include="Assets\scripts\MuteButtonGraphic.cs" />
@@ -97,6 +112,7 @@
     <Compile Include="Assets\scripts\treeGoal.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\BonusLevelPckg\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
