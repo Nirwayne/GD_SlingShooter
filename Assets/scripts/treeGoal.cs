@@ -27,7 +27,7 @@ public class treeGoal : MonoBehaviour {
 			treegoalEvent.SetActive(true);
 
 			gamecontroller.S.addToScore(reward);
-			this_source.pitch = 1f;
+			this_source.pitch = 2.5f;
 			for (int i = 0; i < Bling.Length; i++) {
 				this_source.PlayOneShot(Bling[i],0.5f);
 				

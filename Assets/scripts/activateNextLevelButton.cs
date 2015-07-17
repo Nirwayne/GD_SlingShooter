@@ -10,11 +10,12 @@ public class activateNextLevelButton : MonoBehaviour {
 	}
 
 	void Start() {
-		level = gamecontroller.S.currentlevel;
+		level = (gamecontroller.levelCount);
 	}
 
 	void Update() {
-		if (gamecontroller.score >= level * 3000f) {
+		int myScore = gamecontroller.score;
+		if ((myScore / level) >= 3000) {
 			this.GetComponent<Button>().interactable = true;
 		}
 	}

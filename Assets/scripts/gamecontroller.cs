@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class gamecontroller : MonoBehaviour {
 
 	public static gamecontroller S;
+
+	public static int levelCount = 1;
 	// inspector variables
 	public GameObject maincamera;
 	public bool flymode;
@@ -20,7 +22,7 @@ public class gamecontroller : MonoBehaviour {
 	public int currentlevel;
 	public GameObject go_currentLevel;
 	Text str_currentLevel;
-	public bool isMuted;
+	public static bool isMuted;
 
 	// privates
 	// current level
@@ -62,9 +64,7 @@ public class gamecontroller : MonoBehaviour {
 		str_score.text = "Score " + score;
 
 		str_currentLevel = go_currentLevel.GetComponent<Text>();
-		str_currentLevel.text = "Level " + currentlevel;
-
-		isMuted = false;
+		str_currentLevel.text = "Level " + (currentlevel -1);
 	}
 
 	void loadlevel(int level) {
@@ -76,11 +76,11 @@ public class gamecontroller : MonoBehaviour {
 		// update GUI
 		str_shotstaken.text = "Shots taken  " + shotstaken;   
 		str_score.text = "Score " + score;
-		str_currentLevel.text = "Level " + currentlevel;
+		str_currentLevel.text = "Level " + (currentlevel -1);
 
 		// update volume based on the vol slider
 		if (!isMuted)
-			AudioListener.volume = SliderScript.s.volume;
+			AudioListener.volume = SliderScript.volume;
 
 		if (Input.GetKeyDown("escape"))
 		    Application.Quit ();
@@ -91,8 +91,12 @@ public class gamecontroller : MonoBehaviour {
 	public void addToScore (int adding) {
 		score += adding;
 	}
+	public int getScore() {
+		return score;
+	}
 
 	private void loadNextLevel() {
+		levelCount++;
 		oldScore = score;
 		loadlevel(currentlevel+1);
 	}
@@ -104,7 +108,7 @@ public class gamecontroller : MonoBehaviour {
 			isMuted = true;
 		}
 		else if (isMuted){
-			AudioListener.volume = SliderScript.s.volume;
+			AudioListener.volume = SliderScript.volume;
 			isMuted = false;
 		}
 	}

@@ -10,7 +10,7 @@ public class destroy_plane : MonoBehaviour {
 			other.transform.position = respawn;
 		}
 		else {
-			Destroy(other.gameObject);
+			//Destroy(other.gameObject);
 		}
 	}
 

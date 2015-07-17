@@ -17,6 +17,11 @@ public class playerDetails : MonoBehaviour {
 		return transform.position;
 	}
 
+	public void SetPlayerPosition(Vector3 position) {
+		transform.position = position;
+	}
+
+
 	void Update() {
 		if (Input.GetKeyDown("g")) {
 			if (cursorLocked)
@@ -31,7 +36,7 @@ public class playerDetails : MonoBehaviour {
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 	}
-	void unlockCursor() {
+	public void unlockCursor() {
 		cursorLocked = false;
 		Cursor.lockState = CursorLockMode.None;
 		Cursor.visible = true;

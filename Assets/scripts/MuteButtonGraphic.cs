@@ -10,7 +10,7 @@ public class MuteButtonGraphic : MonoBehaviour {
 	public Sprite notMute; 
 
 	void Update() {
-		if (gamecontroller.S.isMuted) {
+		if (gamecontroller.isMuted) {
 			this.GetComponent<Image>().sprite = Mute;
 		} else {
 			this.GetComponent<Image>().sprite = notMute;

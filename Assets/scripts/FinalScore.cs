@@ -18,4 +18,8 @@ public class FinalScore : MonoBehaviour {
 		if (onclick)
 			Application.Quit();
 	}
+	public void bonus(bool onclick) {
+		if (onclick)
+			Application.LoadLevel(6);
+	}
 }

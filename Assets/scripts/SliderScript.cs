@@ -3,14 +3,12 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class SliderScript : MonoBehaviour {
-	public static SliderScript s;
 
-
-	public float volume;
+	public static float volume;
 	void Awake() {
-		s = this;
+		GetComponent<Slider>().value = volume;
 	}
 	void Update() {
-		volume = this.GetComponent<Slider>().value;
+		volume = GetComponent<Slider>().value;
 	}
 }
