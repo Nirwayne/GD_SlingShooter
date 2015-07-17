@@ -21,12 +21,12 @@ If you play the build there can be problems with the mouse translation when you 
 Then you can play it without problems in window mode.
 
 Features
-start at any level...
-parallax background
-Animated trees in fore- and background\n
-PARTICLE EFFECTS
-soundeffects
-3D first person platformer evolves into a 'shooter'
+- start at any level...
+- parallax background
+- Animated trees in fore- and background
+- PARTICLE EFFECTS
+- soundeffects
+- 3D first person platformer evolves into a 'shooter'
 
 Nice to know
 - Song used: 'We Wish You a Merry Christmas (remix)' by Televisor
